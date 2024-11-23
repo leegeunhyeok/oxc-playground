@@ -1,5 +1,20 @@
 {
   "name": "oxc-playground",
   "packageManager": "yarn@4.5.2",
-  "private": true
+  "private": true,
+  "scripts": {
+    "start": "node -r @swc-node/register src/index.ts"
+  },
+  "devDependencies": {
+    "@swc-node/register": "^1.10.9",
+    "@swc/core": "^1.9.3",
+    "@types/node": "^20",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=20.6"
+  },
+  "dependencies": {
+    "oxc-transform": "^0.37.0"
+  }
 }
